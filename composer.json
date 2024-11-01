@@ -1,0 +1,42 @@
+{
+  "name": "whatarmy/watchtowerhq",
+  "license": "MIT",
+  "type": "project",
+  "description": "The WatchTowerHQ WordPress plugin allows us to monitor, backup, upgrade, and manage your site!",
+  "authors": [
+    {
+      "name": "WhatArmy",
+      "email": "c2p@whatarmydev.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WhatArmy\\Watchtower\\": "src/",
+      "WhatArmy\\Watchtower\\Files\\": "src/Files/",
+      "WhatArmy\\Watchtower\\Mysql\\": "src/Mysql/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "php": ">= 7.4",
+    "shuber/curl": "dev-master",
+    "ext-zip": "*",
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "woocommerce/action-scheduler": "3.8.1",
+    "ext-fileinfo": "*",
+    "symfony/finder": "v5.4.21",
+    "ext-zlib": "*",
+    "ext-iconv": "*",
+    "symfony/polyfill-iconv": "v1.26.0",
+    "symfony/polyfill-mbstring": "v1.26.0",
+    "symfony/polyfill-ctype": "v1.26.0",
+    "nelexa/zip": "4.0.2",
+    "druidfi/mysqldump-php": "1.0.3"
+  }
+}
